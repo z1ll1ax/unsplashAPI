@@ -42,7 +42,7 @@ header{
     margin-right: 3rem;
 }
 .search-bar{
-    width: 17rem;
+    width: 40vw;
     height: 2rem;
     border: none;
     border-radius: 1rem;
@@ -121,5 +121,24 @@ footer h4{
     }
     main{
         grid-template-columns: 1fr;
+    }
+}
+@media (max-width: 500px) {
+    .logo-pic{
+        margin-left: 1rem;
+        width: 2.5rem;
+        height: 2rem;
+    }
+    .img-container img{
+        width: 229px;
+        height: 129px;
+    }
+    .footer-link{
+        display: none;
+    }
+    .search-bar-search{
+        width: 2rem;
+        height: 2rem;
+        padding-left: 0.3125rem;
     }
 }
