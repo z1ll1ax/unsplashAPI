@@ -1,0 +1,125 @@
+:root{
+    --color-white: white;
+
+    --color-1: #ede0d4;
+    --color-2: #e6ccb2;
+    --color-3: #ddb892;
+    --color-4: #b08968;
+    --color-5: #7f5539;
+    --color-6: #9c6644;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-2);
+}
+
+header{
+    width: 100vw;
+    height: 5rem;
+    background-color: var(--color-6);
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo-pic{
+    margin-left: 2rem;
+    margin-right: 1rem;
+    width: 5rem;
+    height: 4rem;
+}
+.logo-title{
+    font-weight: 100;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: var(--color-3);
+}
+.search-bar-container{
+    display: flex;
+    align-items: center;
+    margin-right: 3rem;
+}
+.search-bar{
+    width: 17rem;
+    height: 2rem;
+    border: none;
+    border-radius: 1rem;
+    padding-left: 1rem;
+}
+.search-bar-clear{
+    margin-left: -2.5rem;
+    background-color: transparent;
+    border: none;
+    height: 2rem;
+    z-index: 1;
+}
+.search-bar-search{
+    margin-left: 1.5rem;
+    width: 3rem;
+    height: 3rem;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--color-1);
+}
+
+main{
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 1rem;
+}
+.img-container{
+    margin: auto;
+}
+.img-container img{
+    width: 380px;
+    height: 214px;
+}
+
+footer{
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+.footer-container{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 0.4rem;
+    text-decoration: none;
+}
+footer img{
+    width: 1.5rem;
+}
+footer h4{
+    color: var(--color-5);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+}
+
+@media (min-width: 1600px) {
+    main{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+@media (max-width: 1150px) {
+    main{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (max-width: 768px) {
+    .logo-pic{
+        margin-left: 1rem;
+    }
+    .logo-title{
+        display: none;
+    }
+    main{
+        grid-template-columns: 1fr;
+    }
+}
