@@ -74,8 +74,9 @@ main{
     margin: auto;
 }
 .img-container img{
-    width: 380px;
-    height: 214px;
+    max-width: 380px;
+    max-height: 214px;
+    border: solid 0.2rem var(--color-5);
 }
 
 footer{
@@ -112,7 +113,7 @@ footer h4{
         grid-template-columns: 1fr 1fr;
     }
 }
-@media (max-width: 768px) {
+@media (max-width: 800px) {
     .logo-pic{
         margin-left: 1rem;
     }
@@ -130,9 +131,13 @@ footer h4{
         height: 2rem;
     }
     .img-container img{
+        max-width: 229px;
+        max-height: 129px;
+    }
+    /* .img-container img{
         width: 229px;
         height: 129px;
-    }
+    } */
     .footer-link{
         display: none;
     }
