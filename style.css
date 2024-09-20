@@ -11,8 +11,11 @@
 body{
     margin: 0;
     padding: 0;
+    margin-bottom: 4rem;
     background-color: var(--color-2);
+    min-width: 16rem;
 }
+
 
 header{
     width: 100vw;
@@ -42,11 +45,12 @@ header{
     margin-right: 3rem;
 }
 .search-bar{
-    width: 40vw;
+    width: 35vw;
     height: 2rem;
     border: none;
     border-radius: 1rem;
     padding-left: 1rem;
+    padding-right: 3rem;
 }
 .search-bar-clear{
     margin-left: -2.5rem;
@@ -54,15 +58,24 @@ header{
     border: none;
     height: 2rem;
     z-index: 1;
+    transition: all 0.2s;
 }
 .search-bar-search{
     margin-left: 1.5rem;
     width: 3rem;
     height: 3rem;
-    border: none;
+    border: solid 0.2rem var(--color-1);
     border-radius: 50%;
     background-color: var(--color-1);
+    transition: all 0.2s;
 }
+.search-bar-clear:hover{
+    opacity: 0.7;
+}
+.search-bar-search:hover{
+    background-color: var(--color-3);
+}
+
 
 main{
     margin-top: 2rem;
@@ -74,8 +87,8 @@ main{
     margin: auto;
 }
 .img-container img{
-    max-width: 380px;
-    max-height: 214px;
+    max-width: 22rem;
+    max-height: 22rem;
     border: solid 0.2rem var(--color-5);
 }
 
@@ -98,9 +111,12 @@ footer img{
     width: 1.5rem;
 }
 footer h4{
-    color: var(--color-5);
+    font-size: 2rem;
+    color: transparent;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin: 0;
+    -webkit-text-stroke-width: 0.1rem;
+    -webkit-text-stroke-color: var(--color-5);
 }
 
 @media (min-width: 1600px) {
@@ -123,6 +139,9 @@ footer h4{
     main{
         grid-template-columns: 1fr;
     }
+    .footer-link{
+        display: none;
+    }
 }
 @media (max-width: 500px) {
     .logo-pic{
@@ -131,15 +150,8 @@ footer h4{
         height: 2rem;
     }
     .img-container img{
-        max-width: 229px;
-        max-height: 129px;
-    }
-    /* .img-container img{
-        width: 229px;
-        height: 129px;
-    } */
-    .footer-link{
-        display: none;
+        max-width: 18rem;
+        max-height: 18rem;
     }
     .search-bar-search{
         width: 2rem;
