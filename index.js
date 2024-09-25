@@ -1,4 +1,4 @@
-console.log(123);
+console.log('60/60');
 
 const imgs = document.querySelectorAll('.img-container img');
 const searchBar = document.querySelector('.search-bar');
